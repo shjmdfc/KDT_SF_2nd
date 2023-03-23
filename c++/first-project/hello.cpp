@@ -1,14 +1,32 @@
+// # 
 #include <iostream>
 
 int main() {
-    std::cout << "Hello, world!!!!!!!" << "\n";
-    int a = 1;
-    int b = 2;
-    std::cout << a+b;
-    std::cout << "\n";
+    int a;
+    int b;
+    char c;
+    std::cin >> a;
+    std::cin >> b;
+    std::cin >> c;
 
-    float f = 1.2;
-float g = 3.9;
-std::cout << f+ g;
+    switch (c){
+        case '+':
+        std::cout << a+b;
+        break;
+        case '-':
+        std::cout << a-b;
+        break;
+        case '*':
+        std::cout << a*b;
+        break;
+        case '/':
+        std::cout << a/b << a%b;
+        break;
+        default: std::cout << "No";
+        }
+
+
 }
+
+
 
